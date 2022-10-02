@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Englebert&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Englebert', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: aliceblue;
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: rgb(4,2,28);    
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    margin-bottom: 70px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.logo img {
+    max-width: 150px;
+    align-items: center;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+}
+
+#navLinks i {
+    display: none;
+}
+
+.active, .header-container ul li:hover {
+    background-color: #812afa;
+    border-radius: 3px;
+}
+
+
+nav ul {
+    display: flex;
+}
+
+
+
+nav ul li {
+    margin: 15px;
+    list-style: none;
+    width: 100px;
+    padding: 10px 20px;
+}
+
+ nav li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+.booking {
+    margin-left: 20px;
+    width: 200px;
+    height: 50px;
+    background: none;
+    color: aliceblue;
+    border: 2px solid white;
+    font-size: .9rem;
+    padding: 12px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.call {
+    font-family: Poppins, sans-serif;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    padding: 20px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    min-width: 350px;
+    border-style: none;
+    border-width: 1px;
+    border-color: rgba(129, 42, 250, 0);
+    background-color: #5f71f6;
+    background-image: linear-gradient(287deg, #812afa, #5f71f6 55%);
+    -webkit-transition: -webkit-transform 200ms ease-out;
+    transition: -webkit-transform 200ms ease-out;
+    transition: transform 200ms ease-out;
+    transition: transform 200ms ease-out, -webkit-transform 200ms ease-out; 
+}
+
+
+.btn {
+    padding: 15px;
+    font-size: 20px;
+    margin-left: 10px;
+    border: 1px solid #9898A0;
+    text-decoration: none;
+    color: #9898A0;
+}
+
+.btn:hover {
+    border-color: rgba(129, 42, 250, 0);
+    background-color: #5f71f6;
+    color: black;
+    background-image: linear-gradient(287deg, #812afa, #5f71f6 55%);
+    -webkit-transition: -webkit-transform 200ms ease-out;
+    transition: -webkit-transform 200ms ease-out;
+    transition: transform 200ms ease-out;
+    transition: transform 200ms ease-out, -webkit-transform 200ms ease-out; 
+
+}
+
+
+.hero-container {
+    margin-left: 250px;
+}
+
+.hero-container h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-container h1 span {
+    color: #812afa;
+}
+
+.hero-container p {
+    margin-bottom: 70px;
+    color: #9898A0;
+    line-height: 1.5;
+}
+
+.hero-container .branded-logo {
+    margin-top: 120px;
+}
+
+.brand1 i {
+    position: absolute;
+    bottom: 40px;
+    right: 90px;
+    max-width: 80px;
+    font-size: 5rem;
+    text-decoration: none;
+    color: green;
+}
+
+
+@media (max-width: 700px){
+
+    .container-content{
+        max-width: 100%;
+    }
+    .container {
+        width: 100%;
+        height: 100vh;
+        background: rgb(4,2,28);    
+    }
+
+    .header-container {
+        display: block;
+        align-items: center;
+        padding-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    .logo{
+        margin-left: 10px;
+    }
+
+    .logo img {
+        max-width: 100px;
+        align-items: center;
+    }
+
+    #navLinks i {
+        display: block;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: block;
+        padding: 30px;
+    }
+    nav i {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        cursor: pointer;
+    }
+
+    .hero-container {
+        margin: 0;
+        width: 100%;
+        display: block;
+    }
+
+    .hero-container h1 {
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .navLinks {
+        display: block;
+        position: absolute;
+        background: #5f71f6;
+        height: 400px;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+
+    nav ul li {
+        margin: 15px;
+        list-style: none;
+        width: 100px;
+        padding: 10px 20px;
+    }
+
+    .booking {
+        margin-left: 12px;
+        width: 100px;
+        height: 50px;
+        background: none;
+        color: aliceblue;
+        border: 2px solid white;
+        font-size: .8rem;
+        padding: 12px 25px;
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+
+}
+
+
+
+
+/* portfolio section begins */
+
+#services{
+    width: 100%;
+    height: 100vh;
+    color: black;
+    animation: transition 0.75s;
+}
+
+.services-content{
+    margin-top: 100px;
+}
+
+.heading h1{
+    text-align: center;
+    margin: 25px auto 25px;
+    color: #303030;
+    font-size: 1.875rem;
+    letter-spacing: 0;
+    line-height: 48px;
+    max-width: 640px;
+    font-weight: 300;
+    text-transform: none;
+}
+
+.heading h2{
+    text-align: center;
+    margin: 25px auto 25px;
+    color: #303030;
+    font-size: 1.4rem;
+    letter-spacing: 0;
+    line-height: 48px;
+    max-width: 640px;
+    font-weight: 600;
+    text-transform: none;
+}

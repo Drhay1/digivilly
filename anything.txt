@@ -1,0 +1,80 @@
+
+    <div class="container-content">
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="index.html"><img src="./images/digivilly-white.png" alt="logo"></h1></a>
+                </div>
+                <nav id="navLinks">
+                    
+                    <div class="navLinks">
+                        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                        <ul>
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/digivilly/strategy-call'});return false;" class="booking" > Book a strategy call</a> 
+                    </div>
+                    <i class="fa-solid fa-bars" onclick="showMenu()"></i>                                                          
+                </nav>
+            </div>
+    
+            <!--header section ends-->
+    
+            <div class="hero-container">
+                <h1>We grow your <br> business by building <br> effective online <br> <span>customer acquisition systems</span> </h1>
+                <p>Delivering the infrastructure small-to-medium businesses <br> need to successfully generate new customers online.</p>
+                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/digivilly/strategy-call?hide_event_type_details=1&amp;primary_color=5f71f6'});return false;" class="call" >Book a strategy call</a>
+                <!-- <a href="#portfolio" class="btn">see our work</a> -->
+    
+                <div class="branded-logo">
+                    <div class="brand1">
+                        <a href="https://wa.link/id6phy" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+    
+    
+            </div>
+        </div>
+
+        <!--Hero section ends-->
+
+        <div id="services">
+            <div class="services-content">
+                <div class="heading">
+                    <h2>WE 💝 OUR AMAZING CLIENTS</h2>
+                    <h1>Our Web Design Company Keen To Make You Part Of The Largest Brands On The Planet, While We're Passionate About Growing Brands Of All Sizes.</h1>
+                </div>        
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script src="./js/index.js"></script>

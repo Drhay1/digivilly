@@ -1,82 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Englebert&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
-body {
+html, body {
     font-family: 'Poppins', 'Englebert', sans-serif;
-    font-size: 1em;
-    font-weight: 400;
+    font-size: 18px;
     color: aliceblue;
+    overflow: hidden;
 }
 
-
-.container {
+.header {
     width: 100%;
-    height: 100vh;
-    background: rgb(4,2,28);    
+    min-height: 100vh;
+    background: rgb(4,2,28);  
 }
 
-.header-container {
+nav {
     display: flex;
+    padding: 2% 6%;
     justify-content: space-around;
     align-items: center;
-    padding-top: 10px;
-    margin-bottom: 70px;
 }
 
-.logo a{
-    text-decoration: none;
-    color: aliceblue;
-    cursor: pointer;
-}
-
-.logo img {
+nav img {
     max-width: 150px;
-    align-items: center;
 }
 
 .navLinks {
     display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-#navLinks i {
-    display: none;
-}
-
-.active, .header-container ul li:hover {
-    background-color: #812afa;
-    border-radius: 3px;
+    text-align: center;
 }
 
 
-nav ul {
-    display: flex;
-}
-
-
-
-nav ul li {
-    margin: 15px;
+.navLinks ul li {
     list-style: none;
-    width: 100px;
-    padding: 10px 20px;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
 }
 
- nav li a {
-    text-decoration: none;
+.navLinks ul li a {
     color: aliceblue;
+    text-decoration: none;
 }
-
 
 .booking {
-    margin-left: 20px;
+    margin-left: 120px;
     width: 200px;
     height: 50px;
     background: none;
@@ -87,6 +64,43 @@ nav ul li {
     cursor: pointer;
     text-decoration: none;
     font-weight: 400;
+    
+}
+
+
+.navLinks ul li::after{
+    content: '';
+    margin: auto;
+    background: #812afa;
+    display: block;
+    width: 0px;
+    height: 2px;
+    transition: 0.5s;
+}
+
+.navLinks ul li:hover::after{
+    width: 100%;
+}
+
+.text-box {
+    margin-top: 70px;
+    padding-left: 300px;
+    
+}
+
+.text-box h1{
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.text-box h1 span {
+    color: #812afa;
+}
+
+.text-box p {
+    font-size: 16px;
+    margin-bottom: 50px;
 }
 
 .call {
@@ -113,127 +127,48 @@ nav ul li {
     transition: transform 200ms ease-out, -webkit-transform 200ms ease-out; 
 }
 
-
-.btn {
-    padding: 15px;
-    font-size: 20px;
-    margin-left: 10px;
-    border: 1px solid #9898A0;
-    text-decoration: none;
-    color: #9898A0;
-}
-
-.btn:hover {
-    border-color: rgba(129, 42, 250, 0);
-    background-color: #5f71f6;
-    color: black;
-    background-image: linear-gradient(287deg, #812afa, #5f71f6 55%);
-    -webkit-transition: -webkit-transform 200ms ease-out;
-    transition: -webkit-transform 200ms ease-out;
-    transition: transform 200ms ease-out;
-    transition: transform 200ms ease-out, -webkit-transform 200ms ease-out; 
-
+nav .fa-solid {
+    display: none;
 }
 
 
-.hero-container {
-    margin-left: 250px;
-}
 
-.hero-container h1 {
-    font-size: 3.5rem;
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
 
-.hero-container h1 span {
-    color: #812afa;
-}
 
-.hero-container p {
-    margin-bottom: 70px;
-    color: #9898A0;
-    line-height: 1.5;
-}
 
-.hero-container .branded-logo {
-    margin-top: 120px;
-}
 
-.brand1 i {
-    position: absolute;
-    bottom: 40px;
-    right: 90px;
-    max-width: 80px;
-    font-size: 5rem;
-    text-decoration: none;
-    color: green;
-}
+
+
+
+
+
+
+
 
 
 @media (max-width: 700px){
 
-    .container-content{
-        max-width: 100%;
-    }
-    .container {
-        width: 100%;
-        height: 100vh;
-        background: rgb(4,2,28);    
-    }
-
-    .header-container {
-        display: block;
+    nav {
+        display: flex;
+        padding: 6% 0px;
+        justify-content: space-around;
         align-items: center;
-        padding-top: 10px;
-        margin-bottom: 0px;
     }
+    
 
-    .logo{
-        margin-left: 10px;
-    }
-
-    .logo img {
+    nav img {
         max-width: 100px;
-        align-items: center;
     }
 
-    #navLinks i {
+    .navLinks ul li {
         display: block;
-        margin: 10px;
-        font-size: 20px;
-        cursor: pointer;
-    }
-
-    nav ul {
-        display: block;
-        padding: 30px;
-    }
-    nav i {
-        display: block;
-        position: absolute;
-        right: 10px;
-        top: 20px;
-        cursor: pointer;
-    }
-
-    .hero-container {
-        margin: 0;
-        width: 100%;
-        display: block;
-    }
-
-    .hero-container h1 {
-        font-size: 20px;
-        line-height: 1.2;
-        margin-bottom: 20px;
     }
 
     .navLinks {
         display: block;
         position: absolute;
-        background: #5f71f6;
-        height: 400px;
+        background: #812afa;
+        height: 100vh;
         width: 200px;
         top: 0;
         right: -200px;
@@ -241,67 +176,68 @@ nav ul li {
         z-index: 2;
         transition: 0.5s;
     }
-
-    nav ul li {
-        margin: 15px;
-        list-style: none;
-        width: 100px;
-        padding: 10px 20px;
-    }
-
     .booking {
-        margin-left: 12px;
+        margin-left: 10px;
         width: 100px;
         height: 50px;
         background: none;
         color: aliceblue;
         border: 2px solid white;
-        font-size: .8rem;
-        padding: 12px 25px;
+        font-size: .9rem;
+        padding: 12px 10px;
         cursor: pointer;
         text-decoration: none;
         font-weight: 400;
+        
+    }
+    .text-box {
+        display: block;
+        align-items: center;
+        margin: auto;
+        margin-top: 30px;
+        padding: 6% 0px;
+        
+    }
+    .text-box h1{
+        outline: 3px solid red;
+        width: 100%;
+        font-size: 32px;
+        padding: 10px;
+        padding-left: 30px;
+        line-height: 50px;
+        margin-bottom: 20px;
+        
+    }
+
+    .text-box h1 br {
+        display: none;
+    }
+
+    .text-box p {
+        font-size: 12px;
+        margin-bottom: 50px; 
+        padding: 10px 30px;
+        
+    }
+
+    .text-box p br {
+        display: none;
+    }
+
+    nav .fa-solid {
+        display: block;
+        margin: 10px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .navLinks ul{
+        padding: 30px;
+    }
+
+    .call {
+        margin-left: 35px;
     }
 
 
-}
-
-
-
-
-/* portfolio section begins */
-
-#services{
-    width: 100%;
-    height: 100vh;
-    color: black;
-    animation: transition 0.75s;
-}
-
-.services-content{
-    margin-top: 100px;
-}
-
-.heading h1{
-    text-align: center;
-    margin: 25px auto 25px;
-    color: #303030;
-    font-size: 1.875rem;
-    letter-spacing: 0;
-    line-height: 48px;
-    max-width: 640px;
-    font-weight: 300;
-    text-transform: none;
-}
-
-.heading h2{
-    text-align: center;
-    margin: 25px auto 25px;
-    color: #303030;
-    font-size: 1.4rem;
-    letter-spacing: 0;
-    line-height: 48px;
-    max-width: 640px;
-    font-weight: 600;
-    text-transform: none;
 }
