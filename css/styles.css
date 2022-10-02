@@ -54,7 +54,7 @@ nav img {
 
 .booking {
     margin-left: 120px;
-    width: 200px;
+    width: 250px;
     height: 50px;
     background: none;
     color: aliceblue;
@@ -171,7 +171,7 @@ nav .fa-solid {
         height: 100vh;
         width: 200px;
         top: 0;
-        right: -200px;
+        right: -1px;
         text-align: left;
         z-index: 2;
         transition: 0.5s;
