@@ -171,10 +171,11 @@ nav .fa-solid {
         height: 100vh;
         width: 200px;
         top: 0;
-        right: -1px;
+        right: 0;
         text-align: left;
         z-index: 2;
         transition: 0.5s;
+        cursor: pointer;
     }
     .booking {
         margin-left: 10px;

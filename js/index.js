@@ -1,10 +1,10 @@
 const navLinks = document.querySelector(".navLinks");
 
 function showMenu(){
-    navLinks.style.right = "0";
+    navLinks.style.display = 'block';
 }
 
 
 function hideMenu(){
-    navLinks.style.right = "-1px";
+    navLinks.style.display = 'none';
 }
